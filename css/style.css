@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  background: none;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  line-height: 1;
+  font-family: Inter;
+  font-size: 18px;
+}
+
+:root {
+  --white-color: #fff;
+  --light-grey: rgb(224, 224, 224, 0.12);
+  --grey: rgb(102, 102, 102, 0.60);
+  --black: rgb(0, 0, 0, 0.87);
+  --orange: #fc9041;
+  --dark-green: #184A38;
+  --medium-green: #41705A;
+  --light-green: #BAE4C6;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+[class*=__container] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  padding: 38px 0 0 0;
+}
+
+.accent__logo {
+  color: var(--dark-green);
+}
+
+.main__page {
+  padding-top: 230px;
+  width: 100%;
+  height: 100vh;
+  background: url(/img/main_bg.jpg) 20% -50% no-repeat;
+  background-size: cover;
+}
+
+.main__body {
+  max-width: 585px;
+}
+
+.main__title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 150%;
+}
+
+.main__suptitle {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 150%;
+  margin-top: 20px;
+}
+
+.main__buttons {
+  margin-top: 60px;
+}
+
+.button__body {
+  display: flex;
+  align-items: center;
+  width: 192px;
+  height: 60px;
+  border-radius: 25px;
+  background-color: var(--black);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.button__body:hover, .button__body:focus {
+  background-color: var(--dark-green);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.button__items {
+  display: flex;
+}
+
+.button__logo > img {
+  margin-left: 38px;
+}
+
+.button__text > img {
+  display: block;
+  margin-left: 15px;
+}
+
+.button__text > img:not(:last-of-type) {
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */
