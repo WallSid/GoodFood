@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inter";
   src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
@@ -279,5 +280,69 @@ main {
   .advances__items {
     flex-direction: column;
     row-gap: 40px;
+  }
+}
+.page__easyChoiсe {
+  margin-top: 150px;
+}
+
+.easyChoice__body {
+  display: flex;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+
+.easyChoice__body > div {
+  max-width: 488px;
+}
+
+.title__easyChoice {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 130%;
+  /* or 55px */
+  /* High Emp */
+  color: var(--black);
+  margin-top: 56px;
+  margin-bottom: 60px;
+}
+
+.easyCoice__list-items {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.easyCoice__list-item > img {
+  display: block;
+  margin-top: 10px;
+}
+
+.easyCoice__list-item {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black);
+  padding-bottom: 37px;
+}
+
+.easyChoise__imgContent {
+  display: flex;
+  -moz-column-gap: 39px;
+       column-gap: 39px;
+}
+
+.easyChoise__imgContent > img {
+  display: block;
+}
+.easyChoise__imgContent > img:nth-last-of-type(2) {
+  margin-top: 56px;
+}
+
+@media (max-width: 768px) {
+  .title__easyChoice {
+    font-size: 35px;
+  }
+  .easyCoice__list-item {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
