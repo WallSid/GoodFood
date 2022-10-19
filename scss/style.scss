@@ -313,15 +313,24 @@ footer {
 .page__easyChoiсe {
     margin-top: 150px;
 }
+@media (max-width: 768px) {
+    .page__easyChoiсe {
+        margin-top: 56px;
+    }
+}
 .easyChoiсe {
 }
 .easyChoice__container {
 }
 .easyChoice__body {
     display: flex;
-    column-gap: 135px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // column-gap: 135px;
 }
 .easyChoice__body > div {
+    flex: 1 1 auto;
     max-width: 488px;
 }
 
@@ -332,6 +341,14 @@ footer {
     .easyChoice__body {
         column-gap: 11px;
     }
+}
+
+@media (max-width: 767.98px) {
+    .easyChoice__body {
+        justify-content: center;
+        & > div {
+            max-width: 100%;
+        }
 }
 
 .textContent__easyChoise {
@@ -348,7 +365,7 @@ footer {
 
     color: var(--black);
 
-    margin-top: 56px;
+    // margin-top: 56px;
     margin-bottom: 60px;
 }
 .list__easyCoice {
@@ -377,21 +394,17 @@ footer {
 .easyChoise__imgContent {
     display: flex;
     column-gap: 39px;
+    
+    margin-top: 180px;
+    & img {
+        max-width: 100%;
+    }
 }
 
-.easyChoise__imgContent > img, .easyChoise__imgContent > source {
+.easyChoise__imgContent > img, .easyChoise__imgContent picture {
     display: block;
     &:nth-last-of-type(2) {
         margin-top: 56px;
-    }
-}
-
-@media (min-width: 991px) {
-    .easyChoise__imgContent._lowResolution {
-        display: none;
-    }
-    .easyChoise__imgContent {
-        display: flex;
     }
 }
 
@@ -402,15 +415,22 @@ footer {
     .easyCoice__list-item {
         font-size: 16px;
     }
-
-
-    .easyChoise__imgContent._lowResolution {
-        display: flex;
-        overflow: scroll;
-    }
     .easyChoise__imgContent {
-        display: none;
+        column-gap: 11px;
+        margin-top: 0;
     }
 }
+// @media (max-width: 768px) {
+//     .easyChoise__imgContent {
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
 
+// @media (max-width: 767.98px) {
+//     .easyChoise__body {
+//         display: flex;
+//         flex-direction: row;
+//     }
+// }
 //=======================easyChoice-SECTION-END=========================================
