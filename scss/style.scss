@@ -322,12 +322,11 @@ footer {
 
 .easyChoice__body {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .easyChoice__body > div {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     max-width: 488px;
 }
 
@@ -406,6 +405,7 @@ footer {
 @media (max-width: 767.98px) {
     .easyChoice__body {
         justify-content: center;
+        flex-wrap: wrap;
         & > div {
             max-width: 100%;
         }
@@ -415,4 +415,120 @@ footer {
         margin-top: 10px;
     }
 }
-//=======================easyChoice-SECTION-END========================================
+//=======================easyChoice-section-END========================================
+//=======================order-section-START========================================
+
+.page__order {
+    margin-top: 90px;
+
+    background-color: var(--light-grey);
+}
+.order {
+}
+.order__container {
+}
+.order__body {
+}
+.order__items {
+    display: flex;
+    column-gap: 20px;
+    & > div {
+        flex: 1 1 50%;
+    }
+
+    padding-top: 90px;
+}
+
+
+
+.order__img-items {
+    position: relative;
+}
+.order__img-item {
+    margin-left: 300px;
+}
+
+.order__img-item._absolute {
+    position: absolute;
+    top: -20%;
+    left: -60%;
+
+    z-index: 30;
+}
+// ============ TRYING PSEUDO =================
+// .order__img-item._after {
+//     position: relative;
+// }
+
+// .order__img-item._after::after {
+//     content: " ";
+//     display: block;
+//     position: absolute;
+//     top: 80%;
+//     left: 40%;
+//     width: 222px;
+//     height: 49px;
+//     background-image: url(/img/icons/order_section/switcher.png);
+
+//     filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+//     backdrop-filter: blur(7.5px);
+
+//     z-index: 100;
+// }
+
+.order__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 130%;
+
+    color: var(--black);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.order__description-items {
+    display: flex;
+}
+.order__description-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: var(--black);
+
+    margin-top: 40px;
+
+    &:not(:first-of-type) {
+        padding-left: 30px;
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+    }
+}
+.order__payments-items {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+
+    padding-top: 40px;
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+
+    color: var(--black);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.order__payments-img-item {
+    display: flex;
+    column-gap: 30px;
+    img {
+        display: block;
+    }
+} 
+
+//=======================order-section-END========================================
