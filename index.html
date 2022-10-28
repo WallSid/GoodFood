@@ -220,12 +220,83 @@
                         </div>
                         <div class="delivery__img-items">
                             <div class="delivery__img-item">
-                                <div><img src="/img/icons/delivery_section/order1.png" alt="num_order"></div>
-                                <div><img src="/img/icons/delivery_section/order2.png" alt="num_order"></div>
-                                <div><img src="/img/icons/delivery_section/order3.png" alt="order"></div>
+                                <div>
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="\img\icons\delivery_section\order1(768px).png">
+                                        <img src="/img/icons/delivery_section/order1.png" alt="num_order">
+                                    </picture>
+                                </div>
+                                <div>
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="\img\icons\delivery_section\order2(768px).png">
+                                        <img src="/img/icons/delivery_section/order2.png" alt="num_order">
+                                    </picture>
+                                </div>
+                                <div>
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="\img\icons\delivery_section\order3(768px).png">
+                                        <img src="/img/icons/delivery_section/order3.png" alt="order">
+                                    </picture>
+                                </div>
                             </div>
-                            <div class="delivery__img-item">
-                                <div><img src="/img/icons/delivery_section/screenShot.png" alt="screenShot"></div>
+                            <div class="delivery__img-item _screen">
+                                <picture>
+                                    <source media="(max-width: 576px)" srcset="\img\icons\delivery_section\screenShot_187x370.png">
+                                    <source media="(max-width: 768px)" srcset="\img\icons\delivery_section\screenShot_197x391.png">
+                                    <img id="delivery__img-screenshot" src="/img/icons/delivery_section/screenShot.png" alt="screenShot">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__QR QR">
+                <div class="QR__container">
+                    <div class="QR__body">
+                        <div class="QR__items">
+                            <h2 class="QR__title">
+                                Скануй та скористайся перевагами комфортного замовлення їжі в мобільному додатку <span class="accent__logo">GOOD</span>FOOD
+                            </h2>
+                            <div class="QR__description">
+                                Доступно в Google Play та App Store
+                            </div>
+                        </div>
+                        <div class="QR__items">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="\img\icons\page__QR\QR(576px).png">
+                                <source media="(max-width: 768px)" srcset="\img\icons\page__QR\QR(768px).png">
+                                <img src="/img/icons/page__QR/QR.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__getMore getMore">
+                <div class="getMore__container">
+                    <div class="getMore__body">
+                        <div class="getMore__items">
+                            <div class="getMore__item">
+                                <h2 class="getMore__title">
+                                    Отримай більше можливостей
+                                </h2>
+                                <div>
+                                    <h3 class="getMore__sup-title">
+                                        Своя колекція улюблених страв ресторану
+                                    </h3>
+                                    <div class="getMore__title-img">
+                                        <img src="/img/icons/page__QR/dish1.png" alt="dish">
+                                        
+                                    </div>
+                                    <div class="getMore__title-img">
+                                        <img src="/img/icons/page__QR/dish2.png" alt="dish">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="getMore__item">
+                                <img src="/img/icons/page__QR/personal_acc.png" alt="account">
+                            </div>
+                            <div class="getMore__item">
+                                <img src="/img/icons/page__QR/paymentCard.png" alt="paymentCard">
                             </div>
                         </div>
                     </div>
@@ -233,7 +304,80 @@
             </section>
         </main>
         <footer class="footer">
-            footer
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="/img/icons/Logo/Logo_2.png" alt="">
+                                </a>
+                            </div>
+                            <h2 class="footer__title">
+                                Онлайн ресторан
+                            </h2>
+                            <div class="footer__copyright">
+                                © Всі права захищені 2021  
+                            </div>
+                        </div>
+                        <div class="footer__item footer__contacts">
+                            <div class="footer__email">
+                                <a href="#" type="mail">info@goodfood.com</a>
+                            </div>
+                            <div class="footer__socialNetworks">
+                                <a href="#"><img src="/img/icons/Social/facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="/img/icons/Social/Instagram.png" alt="instagram"></a>
+                                <a href="#"><img src="/img/icons/Social/Telegram.png" alt="telegram"></a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__buttons">
+                                <button class="footer__button button__footer">
+                                    <a href="#" class="button__body">
+                                        <div class="button__items">
+                                            <div class="button__logo">
+                                                <img src="/img/icons/buttons/Logo GooglePlay_footer.png" alt="Logo_GooglePlay" class="button__logo">
+                                            </div>
+                                            <div class="button__text">
+                                                <img src="/img/icons/buttons/avalible.png" alt="download">
+                                                <img src="/img/icons/buttons/inGooglePlay.png" alt="src_download">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </button>
+                                <button class="footer__button">
+                                    <a href="#" class="button__body">
+                                        <div class="button__items">
+                                            <div class="button__logo">
+                                                <img src="/img/icons/buttons/apple__footer.png" alt="apple_logo" class="button__logo">
+                                            </div>
+                                            <div class="button__text _apple">
+                                                <img src="/img/icons/buttons/download.png" alt="download">
+                                                <img src="/img/icons/buttons/AppStore.png" alt="src_download">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__publicOffer">
+                                <a href="#">
+                                    Публічна оферта
+                                </a>
+                            </div>
+                            <div class="footer__privacyPolicy">
+                                <a href="#">
+                                    Політика конфіденційності
+                                </a>
+                            </div>
+                            <div class="languages">
+                                Українська
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
