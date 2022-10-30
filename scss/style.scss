@@ -190,7 +190,7 @@ footer {
 
 @media (max-width: 768px) {
     .main__page {
-        background: url(/img/main_bg_768.jpg) 0 0 no-repeat;
+        background: url(../img/main_bg_768.jpg) 0 0 no-repeat;
         background-position: 0 -20%;
     }
     .main__buttons {
@@ -474,7 +474,7 @@ footer {
     left: 47%;
     width: 222px;
     height: 49px;
-    background-image: url(/img/icons/order_section/switcher.png);
+    background-image: url(../img/icons/order_section/switcher.png);
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -628,7 +628,7 @@ footer {
     position: relative;
     &::after {
         content: "";
-        background-image: url(/img/icons/delivery_section/bg_map.png);
+        background-image: url(../img/icons/delivery_section/bg_map.png);
         background-repeat: no-repeat;
         position: absolute;
         height: 475px;
@@ -642,7 +642,7 @@ footer {
 
 @media (max-width: 768px) {
     .delivery__container::after {
-        background-image: url(/img/icons/delivery_section/bg_map.png);
+        background-image: url(../img/icons/delivery_section/bg_map.png);
         height: 357px;
         width: 156px;
     }
@@ -952,7 +952,7 @@ footer {
     left: 0;
     width: 26px;
     height: 26px;
-    background-image: url(/img/icons/24px/heart.png);
+    background-image: url(../img/icons/24px/heart.png);
     background-repeat: no-repeat;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
